@@ -40,6 +40,24 @@ module testbench();
         #(delay);
         #(cyc);
 
+        #(delta);
+        A=32'd2147483643;
+        B=32'd1431655762;
+        start = 1'b1;
+        $display("A = %d, B = %d", A, B);
+        #(cyc);
+        start = 1'b0;
+        $display("start = 1'b0");
+        #(cyc)
+
+        $display("waiting done");
+        @(posedge done);
+        #(delay);
+        #(delay);
+        $display("\tGCD = %d, ERROR = %d", result, ERROR);
+        #(delay);
+        #(cyc);
+
         #(2*cyc);
         $finish;
     end
