@@ -1,7 +1,7 @@
 # WARNING!!!
 broken when `make syn` 
 
-guess: the circuit **latch**
+guessed reason: the circuit **latch**
 
 ---
 # DLD-lab4 
