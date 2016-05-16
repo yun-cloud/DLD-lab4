@@ -1,3 +1,7 @@
+# WARNING!!!
+broken when `make syn` 
+guess: the circuit *latch*
+---
 # DLD-lab4 
 ## Greatest Common divisor (32-bit)
 
